@@ -1,0 +1,12 @@
+#footer {
+  ul > li {
+    display: inline;
+    list-style-type: none;
+    padding: .25em;
+    font-variant: all-small-caps;
+    font-size: 1.375em;
+  }
+  ul.bs-social > li {
+    padding: .75em;
+  }
+}

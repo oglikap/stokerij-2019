@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+$red: #800000;
+
+body {
+  font-family: 'PT Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'PT Sans', sans-serif;
+}
+
+p {
+  font-size: 1.125em;
+}
+
+.bs-color-red {
+  color: $red;
+}
+
+.uk-link, a {
+  color: $red;
+  border-bottom: 1px dotted;
+  &:hover {
+    color: $red;
+    text-decoration: none;
+    border-bottom: 0;
+  }
+}
+// NAV
+.bs-front-menu > ul {
+  > li {
+    padding: 0 1em 1em 1em;
+    > a {
+      font-size: 1.75em;
+      letter-spacing: 2px;
+      text-transform: none;
+      font-family: 'PT Sans', sans-serif;
+    }
+  }
+}
+
+// h1.bs-heading-hero {
+//   -moz-transform: scale(1);
+//   -webkit-transform: scale(1);
+//   -ms-transform: scale(1);
+//   transform: scale(1);
+//   -moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease;
+//   -webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
+//   -ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
+//   transition: transform 0.5s ease, opacity 0.5s ease;
+//   display: inline-block;
+//   padding: 0.35em 1em;
+//   opacity: 1;
+//   position: relative;
+//   z-index: 1;
+//   &:before {
+//     top: 0;
+//     left: 0;
+//   }
+//   &:before, &:after {
+//     -moz-transition: width 0.85s ease;
+//     -webkit-transition: width 0.85s ease;
+//     -ms-transition: width 0.85s ease;
+//     transition: width 0.85s ease;
+//     -moz-transition-delay: 0.25s;
+//     -webkit-transition-delay: 0.25s;
+//     -ms-transition-delay: 0.25s;
+//     transition-delay: 0.25s;
+//     background: grey;
+//     content: '';
+//     display: block;
+//     height: 1px;
+//     position: absolute;
+//     width: 100%;
+//   }
+//   &:after {
+//     bottom: 0;
+//     right: 0;
+//   }
+// }
+
+@import "footer";
+@import "news";
+@import "resume";
+@import "prev-next";

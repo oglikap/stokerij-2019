@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans");
+body {
+  font-family: 'PT Sans', sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'PT Sans', sans-serif; }
+
+p {
+  font-size: 1.125em; }
+
+.bs-color-red {
+  color: #800000; }
+
+.uk-link, a {
+  color: #800000;
+  border-bottom: 1px dotted; }
+  .uk-link:hover, a:hover {
+    color: #800000;
+    text-decoration: none;
+    border-bottom: 0; }
+
+.bs-front-menu > ul > li {
+  padding: 0 1em 1em 1em; }
+  .bs-front-menu > ul > li > a {
+    font-size: 1.75em;
+    letter-spacing: 2px;
+    text-transform: none;
+    font-family: 'PT Sans', sans-serif; }
+
+#footer ul > li {
+  display: inline;
+  list-style-type: none;
+  padding: .25em;
+  font-variant: all-small-caps;
+  font-size: 1.375em; }
+#footer ul.bs-social > li {
+  padding: .75em; }
+
+#bs-news {
+  background: url(../images/body-bg2.jpg) center no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+
+.bs-news-item > div:nth-child(1) {
+  order: 1; }
+.bs-news-item > div:nth-child(2) {
+  order: 0;
+  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(255, 255, 72, 0.15); }
+.bs-news-item > div:nth-child(3) {
+  order: 2; }
+.bs-news-item > div:nth-child(4) {
+  background-color: rgba(255, 255, 255, 0.225);
+  background-color: rgba(255, 255, 72, 0.225);
+  order: 3; }
+.bs-news-item > div:nth-child(5) {
+  order: 5; }
+.bs-news-item > div:nth-child(6) {
+  order: 4;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 72, 0.3); }
+.bs-news-item > div:nth-child(7) {
+  order: 6; }
+.bs-news-item > div:nth-child(8) {
+  background-color: rgba(0, 0, 0, 0.375);
+  background-color: rgba(255, 255, 72, 0.375);
+  order: 7; }
+
+.bs-resume-header-frame {
+  position: relative; }
+  .bs-resume-header-frame > a:hover {
+    text-decoration: none; }
+  .bs-resume-header-frame .bs-resume-header {
+    display: none;
+    background: rgba(0, 0, 0, 0.75);
+    background: rgba(85, 11, 30, 0.9);
+    line-height: 1;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 15px);
+    height: 100%;
+    font-size: 24px; }
+    .bs-resume-header-frame .bs-resume-header > div {
+      height: 75%; }
+
+.bs-prev-next > div > div > a {
+  font-size: 1.5em;
+  font-variant: all-small-caps; }
+
+/*# sourceMappingURL=custom.css.map */

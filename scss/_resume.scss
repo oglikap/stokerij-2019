@@ -1,0 +1,21 @@
+.bs-resume-header-frame {
+  position: relative;
+  > a:hover {
+    text-decoration: none;
+  }
+  .bs-resume-header {
+    display: none;
+    background: rgba(0, 0, 0, .75);
+    background: rgba(85, 11, 30, .9);
+    line-height: 1;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 15px);
+    height: 100%;
+    font-size: 24px;
+    > div {
+      height: 75%;
+    }
+  }
+}
