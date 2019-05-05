@@ -2,6 +2,7 @@
 
 // Add scripts and stylesheets
 function stokerij_scripts() {
+  // wp_enqueue_style( 'uikit_css_core', 'https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.4/css/uikit-core.min.css' );
   wp_enqueue_style( 'uikit_css', 'https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.4/css/uikit.min.css' );
   wp_enqueue_style( 'custom_css', get_template_directory_uri() . '/css/custom.css' );
 

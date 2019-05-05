@@ -6,7 +6,7 @@
   </div>
   <div>
     <div>
-    <?php next_post_link('%link', '%title <span uk-icon="icon: arrow-right; ratio: 2.5"></span>'); ?>
+    <?php next_post_link('%link', '%title <span style="color: #666" uk-icon="icon: arrow-right; ratio: 2.5"></span>' ); ?>
     </div>
   </div>
 </div>

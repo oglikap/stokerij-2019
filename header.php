@@ -9,7 +9,7 @@
 
     <header>
 
-    <?php if( is_front_page() ) {
+    <?php if( is_front_page() || is_singular('productions') ) {
 
       // CONDITIONAL TO DETERMINE WHETHER TO SHOW
       // BG PICTURE OR SLIDER
@@ -23,17 +23,27 @@
 
         get_template_part( 'template-parts/front/hero/content', 'slider' );
 
-      }  ?>
+      } else {
 
+        get_template_part( 'template-parts/content', 'nav' );
 
+      } ?>
 
+    <?php
+    // END IF is_front_page
+    }
+    // ELSEIF is single 'producties'
+    // elseif( is_singular( 'productions' ) ) {
+    //
+    //   get_template_part( 'template-parts/front/hero/content', 'bg-productions' );
+    //
+    // }
 
-
-    <?php } // endif is_front_page
 
     else {
 
       get_template_part( 'template-parts/content', 'nav' );
+
 
     } ?>
 

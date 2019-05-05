@@ -1,0 +1,41 @@
+.bs-vertical-box {
+  position: relative;
+  width: 4em;
+  height: 4em;
+  padding: 5px;
+  color: #222;
+  text-align: right;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border: 4em solid transparent;
+    border-top-color: rgba(255, 255, 255, .7);
+    border-left-color: rgba(255, 255, 255, .7);
+  }
+  .uk-logo {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+
+@media screen and (min-width: 640px) {
+
+  .bs-vertical-box {
+    width: 5em;
+    height: 5em;
+    padding: 5px;
+    &:before {
+      border: 5em solid transparent;
+      border-top-color: #ffff48;
+      border-left-color: #ffff48;
+    }
+  }
+
+}

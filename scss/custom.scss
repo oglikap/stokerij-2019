@@ -1,32 +1,45 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
 
+@font-face {
+  font-family: 'Noah Bold';
+  src: url('../fonts/3909F9_0_0.eot') format('embedded-opentype'),url('../fonts/3909F9_0_0.woff2') format('woff2'),url('../fonts/3909F9_0_0.woff') format('woff'),url('../fonts/3909F9_0_0.ttf') format('truetype');
+}
+
 $red: #800000;
 
 body {
   font-family: 'PT Sans', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6,
+.uk-heading-xlarge, .uk-heading-large, .uk-heading-medium {
   font-family: 'PT Sans', sans-serif;
+  font-family: 'Noah Bold', sans-serif;
+  font-weight: bolder;
+  letter-spacing: 2px;
 }
 
 p {
   font-size: 1.125em;
 }
 
-.bs-color-red {
+.bs-color-red, em {
   color: $red;
 }
 
 .uk-link, a {
   color: $red;
-  border-bottom: 1px dotted;
+//  border-bottom: 1px dotted;
   &:hover {
     color: $red;
     text-decoration: none;
     border-bottom: 0;
   }
+  &.uk-light:hover {
+    color: #ffff48;
+  }
 }
+
 // NAV
 .bs-front-menu > ul {
   > li {
@@ -40,47 +53,24 @@ p {
   }
 }
 
-// h1.bs-heading-hero {
-//   -moz-transform: scale(1);
-//   -webkit-transform: scale(1);
-//   -ms-transform: scale(1);
-//   transform: scale(1);
-//   -moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease;
-//   -webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
-//   -ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
-//   transition: transform 0.5s ease, opacity 0.5s ease;
-//   display: inline-block;
-//   padding: 0.35em 1em;
-//   opacity: 1;
-//   position: relative;
-//   z-index: 1;
-//   &:before {
-//     top: 0;
-//     left: 0;
-//   }
-//   &:before, &:after {
-//     -moz-transition: width 0.85s ease;
-//     -webkit-transition: width 0.85s ease;
-//     -ms-transition: width 0.85s ease;
-//     transition: width 0.85s ease;
-//     -moz-transition-delay: 0.25s;
-//     -webkit-transition-delay: 0.25s;
-//     -ms-transition-delay: 0.25s;
-//     transition-delay: 0.25s;
-//     background: grey;
-//     content: '';
-//     display: block;
-//     height: 1px;
-//     position: absolute;
-//     width: 100%;
-//   }
-//   &:after {
-//     bottom: 0;
-//     right: 0;
-//   }
-// }
+ul.bs-nav-text {
+  text-align: center;
+  font-family: 'Noah Bold', sans-serif;
+  font-size: 1.25em;
+  padding-top: 2em;
+  > li {
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    line-height: 2;
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+}
 
-@import "footer";
+@import "content";
 @import "news";
 @import "resume";
 @import "prev-next";
+@import "producties";
+@import "vertical";
+@import "footer";

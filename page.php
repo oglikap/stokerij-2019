@@ -1,6 +1,6 @@
 <?php
 /**
-* The template for displaying a single production.
+* The template for displaying a single page.
 *
 * @package WordPress
 * @subpackage Stokerij
@@ -8,5 +8,7 @@
 */
 
 get_header();
-get_template_part( 'template-parts/content', 'production' );
+
+get_template_part( 'template-parts/content', 'single' );
+
 get_footer(); ?>

@@ -1,23 +1,31 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Sans");
+@font-face {
+  font-family: 'Noah Bold';
+  src: url("../fonts/3909F9_0_0.eot") format("embedded-opentype"), url("../fonts/3909F9_0_0.woff2") format("woff2"), url("../fonts/3909F9_0_0.woff") format("woff"), url("../fonts/3909F9_0_0.ttf") format("truetype"); }
 body {
   font-family: 'PT Sans', sans-serif; }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'PT Sans', sans-serif; }
+h1, h2, h3, h4, h5, h6,
+.uk-heading-xlarge, .uk-heading-large, .uk-heading-medium {
+  font-family: 'PT Sans', sans-serif;
+  font-family: 'Noah Bold', sans-serif;
+  font-weight: bolder;
+  letter-spacing: 2px; }
 
 p {
   font-size: 1.125em; }
 
-.bs-color-red {
+.bs-color-red, em {
   color: #800000; }
 
 .uk-link, a {
-  color: #800000;
-  border-bottom: 1px dotted; }
+  color: #800000; }
   .uk-link:hover, a:hover {
     color: #800000;
     text-decoration: none;
     border-bottom: 0; }
+  .uk-link.uk-light:hover, a.uk-light:hover {
+    color: #ffff48; }
 
 .bs-front-menu > ul > li {
   padding: 0 1em 1em 1em; }
@@ -27,14 +35,26 @@ p {
     text-transform: none;
     font-family: 'PT Sans', sans-serif; }
 
-#footer ul > li {
-  display: inline;
-  list-style-type: none;
-  padding: .25em;
-  font-variant: all-small-caps;
-  font-size: 1.375em; }
-#footer ul.bs-social > li {
-  padding: .75em; }
+ul.bs-nav-text {
+  text-align: center;
+  font-family: 'Noah Bold', sans-serif;
+  font-size: 1.25em;
+  padding-top: 2em; }
+  ul.bs-nav-text > li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    line-height: 2; }
+    ul.bs-nav-text > li:last-child {
+      border-bottom: 0; }
+
+.bs-content p:nth-child(2) {
+  font-size: 1.35em; }
+.bs-content p:nth-child(3) {
+  font-size: 1.25em; }
+.bs-content p:nth-child(4) {
+  font-size: 1.15em; }
+.bs-content > :first-child {
+  font-size: 1.5em;
+  font-weight: bolder; }
 
 #bs-news {
   background: url(../images/body-bg2.jpg) center no-repeat;
@@ -86,6 +106,64 @@ p {
 
 .bs-prev-next > div > div > a {
   font-size: 1.5em;
-  font-variant: all-small-caps; }
+  font-variant: all-small-caps;
+  font-family: "Noah Bold", sans-serif; }
+
+.bs-title {
+  font-size: 5em; }
+
+.bs-subtitle {
+  color: #800000; }
+
+/* ARCHIVE PAGE */
+.bs-productions-grid {
+  font-size: 14px; }
+  .bs-productions-grid > div > h3 {
+    line-height: 1;
+    word-break: break-word;
+    font-size: 1.25em; }
+    .bs-productions-grid > div > h3 > a {
+      color: #333; }
+
+.bs-vertical-box {
+  position: relative;
+  width: 4em;
+  height: 4em;
+  padding: 5px;
+  color: #222;
+  text-align: right; }
+  .bs-vertical-box:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border: 4em solid transparent;
+    border-top-color: rgba(255, 255, 255, 0.7);
+    border-left-color: rgba(255, 255, 255, 0.7); }
+  .bs-vertical-box .uk-logo {
+    position: relative;
+    z-index: 1; }
+
+@media screen and (min-width: 640px) {
+  .bs-vertical-box {
+    width: 5em;
+    height: 5em;
+    padding: 5px; }
+    .bs-vertical-box:before {
+      border: 5em solid transparent;
+      border-top-color: #ffff48;
+      border-left-color: #ffff48; } }
+#footer ul > li {
+  display: inline;
+  list-style-type: none;
+  padding: .25em;
+  font-variant: all-small-caps;
+  font-size: 1.375em; }
+#footer ul.bs-social > li {
+  padding: .75em; }
 
 /*# sourceMappingURL=custom.css.map */
