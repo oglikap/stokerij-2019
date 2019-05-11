@@ -13,8 +13,8 @@
         <h1 class="uk-padding">
           <?php the_custom_logo(); ?>
         </h1>
-        <div class="uk-margin-large-bottom uk-margin-top" style="font-size: 13px;">
-          <p style="width: 50%;font-size: 1.5em;" class="uk-margin-auto uk-text-uppercase">
+        <div class="uk-margin-large-bottom uk-margin-top bs-slogan">
+          <p class="uk-margin-auto uk-text-uppercase">
             <?php the_field('slogan') ?>
           </p>
         </div>
@@ -31,17 +31,45 @@
           <h2 class="uk-light uk-heading-xlarge">Producties</h2>
         </div>
 
-        <div class="uk-width-xxlarge uk-margin-auto">
-          <h2 class="uk-heading-medium uk-text-center" style="color: #ffff48"><?php the_title(); ?></h2>
+        <div class="uk-production-quote uk-margin-auto">
+          <h2 class="uk-text-center uk-heading-medium bs-productions-heading" style="color: #ffff48; font-variant: all-small-caps; line-height: .75"><?php the_title(); ?></h2>
         </div>
 
-        <div class="uk-width-xxlarge uk-text-center uk-text-lead uk-light">
+        <div class="uk-text-center uk-text-lead uk-light bs-production-quote">
           <?php the_excerpt(); ?>
         </div>
 
-        <div class="uk-light uk-text-center">
-          <a href="#bs-productions" uk-icon="icon: arrow-down; ratio: 4.5" uk-scroll></a>
-        </div>
+        <?php get_template_part( 'template-parts/content', 'topdown' ); ?>
+
+      </div>
+
+    <?php } elseif // BLOCK OPSTOKERIJ
+    ( is_singular('opstokerij') ) { ?>
+      <div class="uk-padding-large uk-light uk-text-center uk-text-bold">
+        <h2 class="uk-heading-xsmall uk-text-uppercase">De Stokerij en Theater aan de Schie presenteren</h2>
+        <h1 class="uk-heading-large uk-margin-large-bottom"><span style="color: #ea6623">THEATERFESTIVAL</span><br />DE OPSTOKERIJ</h1>
+      </div>
+
+    <?php } elseif // BLOCK JONGE STOKERIJ
+    ( is_page('jonge-stokerij') ) { ?>
+
+      <div class="uk-display-block">
+        <h2 class="uk-heading-large uk-light uk-text-center"><?php the_title(); ?></h2>
+        <p class="uk-text-lead uk-text-center uk-light bs-production-quote">
+          De presentaties zullen variëren van klein (enkel voor de ouders) tot deelname aan de professionele voorstellingen of films van de Stokerij zelf.
+        </p>
+        <?php get_template_part( 'template-parts/content', 'topdown' ); ?>
+      </div>
+
+    <?php } elseif // BLOCK 'OVER'
+    ( is_page( 'over' ) ) { ?>
+
+      <div class="uk-display-block">
+        <h2 class="uk-heading-large uk-light uk-text-center"><span class="bs-color-yellow">Over</span> De Stokerij</h2>
+        <p class="uk-text-lead uk-text-center uk-light bs-production-quote">
+          Schiedam is de standplaats en broedplaats van ons stadsgezelschap, waar we over vier jaar niet meer weg te denken zijn en waar we ons als makers middenin de samenleving plaatsen.
+        </p>
+        <?php get_template_part( 'template-parts/content', 'topdown' ); ?>
       </div>
 
     <?php } ?>

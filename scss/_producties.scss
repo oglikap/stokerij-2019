@@ -1,6 +1,6 @@
-.bs-title {
-  font-size: 5em;
-}
+// .bs-title {
+//   font-size: 3em;
+// }
 
 .bs-subtitle {
   color: $red;
@@ -18,3 +18,16 @@
     }
   }
 }
+
+.bs-production-quote {
+  width: 90%;
+  margin: 0 auto;
+}
+
+ @media screen and (min-width: 640px) {
+
+   .bs-production-quote {
+     width: 60%;
+   }
+
+ }

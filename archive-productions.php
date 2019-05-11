@@ -1,8 +1,9 @@
 <?php get_header(); ?>
 
 <div class="uk-section">
-  <h2 class="uk-position-top-center uk-margin-top bs-title">Alle producties</h2>
-  <div class="uk-container">
+  <h2 class="uk-position-top-center uk-margin-large-top uk-heading-large uk-visible@s">Alle producties</h2>
+  <h2 class="uk-position-top-center uk-heading-medium uk-hidden@s" style="top: 5%">Alle producties</h2>
+  <div class="uk-container uk-margin-small-top">
     <h2 class="uk-heading-line uk-text-center bs-subtitle"><span>Huidige en komende producties</span></h2>
 
     <div class="uk-child-width-1-2 uk-child-width-1-4@s uk-child-width-1-5@m uk-grid-small bs-productions-grid" uk-grid='masonry: true'>
@@ -41,7 +42,7 @@
     <h2 class="uk-heading-line uk-text-center bs-subtitle"><span>Eerdere Producties</span></h2>
 
 
-    <div class="uk-child-width-1-5 uk-grid-small bs-productions-grid" uk-grid="masonry: true">
+    <div class="uk-child-width-1-2 uk-child-width-1-4@s uk-child-width-1-5@l uk-grid-small bs-productions-grid" uk-grid="masonry: true">
       <?php //* The Query
       $exec_query = new WP_Query( array (
       'post_type' => array('productions', 'opstokerij'),

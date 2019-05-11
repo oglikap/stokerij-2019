@@ -9,12 +9,11 @@
 
     <header>
 
-    <?php if( is_front_page() || is_singular('productions') ) {
+    <?php if( is_front_page() || is_singular('productions') || is_singular('opstokerij') || is_page('jonge-stokerij') || is_page(2) ) {
 
       // CONDITIONAL TO DETERMINE WHETHER TO SHOW
       // BG PICTURE OR SLIDER
       if( get_field('background_img') && !get_field('slider') ) {
-
 
         get_template_part( 'template-parts/front/hero/content', 'noslider' );
 
@@ -23,7 +22,9 @@
 
         get_template_part( 'template-parts/front/hero/content', 'slider' );
 
-      } else {
+      }
+
+       else {
 
         get_template_part( 'template-parts/content', 'nav' );
 
@@ -32,18 +33,10 @@
     <?php
     // END IF is_front_page
     }
-    // ELSEIF is single 'producties'
-    // elseif( is_singular( 'productions' ) ) {
-    //
-    //   get_template_part( 'template-parts/front/hero/content', 'bg-productions' );
-    //
-    // }
-
 
     else {
 
       get_template_part( 'template-parts/content', 'nav' );
-
 
     } ?>
 

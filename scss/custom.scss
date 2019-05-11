@@ -5,14 +5,23 @@
   src: url('../fonts/3909F9_0_0.eot') format('embedded-opentype'),url('../fonts/3909F9_0_0.woff2') format('woff2'),url('../fonts/3909F9_0_0.woff') format('woff'),url('../fonts/3909F9_0_0.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'AvenirNextLTPro-Medium';
+  src: url('../fonts/2FDF27_8_0.woff2') format('woff2'), url('../fonts/2FDF27_8_0.woff') format('woff'), url('../fonts/2FDF27_8_0.ttf') format('truetype');
+}
+
 $red: #800000;
+$yellow: #ffff48;
 
 body {
   font-family: 'PT Sans', sans-serif;
+  font-family: 'AvenirNextLTPro-Medium', sans-serif;
+  color: #222;
+  // letter-spacing: 1px;
 }
 
 h1, h2, h3, h4, h5, h6,
-.uk-heading-xlarge, .uk-heading-large, .uk-heading-medium {
+.uk-heading-2xlarge, .uk-heading-xlarge, .uk-heading-large, .uk-heading-medium, .uk-heading-small {
   font-family: 'PT Sans', sans-serif;
   font-family: 'Noah Bold', sans-serif;
   font-weight: bolder;
@@ -20,11 +29,15 @@ h1, h2, h3, h4, h5, h6,
 }
 
 p {
-  font-size: 1.125em;
+  // font-size: 1.125em;
 }
 
 .bs-color-red, em {
   color: $red;
+}
+
+.bs-color-yellow {
+  color: $yellow;
 }
 
 .uk-link, a {
@@ -67,10 +80,62 @@ ul.bs-nav-text {
   }
 }
 
+.bs-productions-heading {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  // text-overflow: ellipsis;
+}
+
+
+div.bs-slogan {
+  font-size: 11px;
+  > p {
+    font-size: 1.5em;
+    width: 80%;
+  }
+}
+
+
+
+@media screen and (max-width: 450px) {
+
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  div.bs-slogan {
+    font-size: 13px;
+    > p {
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width: 823px) and (orientation: landscape) {
+  html {
+    font-size: 10px;
+    header {
+      font-size: 7px;
+    }
+    p {
+      font-size: 13px;
+    }
+  }
+}
+
 @import "content";
 @import "news";
 @import "resume";
 @import "prev-next";
 @import "producties";
 @import "vertical";
+@import "agenda";
+@import "slider";
 @import "footer";

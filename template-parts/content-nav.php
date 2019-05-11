@@ -17,9 +17,9 @@
 
   <!-- OFFCANVAS MENU -->
 
-   <a href="#bs-toggle-menu" uk-toggle uk-icon="icon: menu; ratio: 3" class="uk-position-top-right uk-visible@s uk-padding <?php if( is_front_page() || is_singular('productions') ) { echo "uk-light"; } ?>"></a>
+   <a href="#bs-toggle-menu" uk-toggle uk-icon="icon: menu; ratio: 3" class="uk-position-top-right uk-visible@s uk-padding-small <?php if( is_front_page() || is_singular('productions') && get_field('background_img') || is_singular('opstokerij') && get_field('background_img') || is_page('jonge-stokerij') && get_field('background_img') || is_page('over') && get_field('background_img') ) { echo "uk-light"; } ?>"></a>
 
-   <a href="#bs-toggle-menu" uk-toggle uk-icon="icon: menu; ratio: 2" class="uk-position-top-right uk-hidden@s"></a>
+   <a href="#bs-toggle-menu" uk-toggle uk-icon="icon: menu; ratio: 2" class="uk-position-top-right uk-hidden@s uk-padding-small <?php if( is_front_page() || is_singular('productions') && get_field('background_img') || is_singular('opstokerij') && get_field('background_img') || is_page('jonge-stokerij') && get_field('background_img') || is_page('over') && get_field('background_img') ) { echo "uk-light"; } ?>"></a>
 
    <div class="uk-offcanvas-content">
      <div id="bs-toggle-menu" uk-offcanvas="overlay: true">

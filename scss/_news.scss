@@ -5,47 +5,40 @@
 }
 
 .bs-news-item {
+    .uk-card-body > p {
+        color: #00000a;
+      }
   // .bs-right-flip {
     > div:nth-child(1) {
       order: 1;
+      background-color: rgba(0, 0, 0, 0.15);
     }
     > div:nth-child(2) {
       order: 0;
       background-color: rgba(0, 0, 0, 0.15);
-      background-color: rgba(255, 255, 72, .15);
     }
     > div:nth-child(3) {
       order: 2;
+      background-color: rgba(0, 0, 0, .225);
     }
     > div:nth-child(4) {
-      background-color: rgba(255, 255, 255, 0.225);
-      background-color: rgba(255, 255, 72, .225);
+      background-color: rgba(0, 0, 0, .225);
       order: 3;
     }
     > div:nth-child(5) {
       order: 5;
+      background-color: rgba(0, 0, 0, 0.3);
     }
     > div:nth-child(6) {
       order: 4;
       background-color: rgba(0, 0, 0, 0.3);
-      background-color: rgba(255, 255, 72, .3);
     }
     > div:nth-child(7) {
       order: 6;
+      background-color: rgba(0, 0, 0, 0.375);
     }
     > div:nth-child(8) {
       background-color: rgba(0, 0, 0, 0.375);
-      background-color: rgba(255, 255, 72, .375);
       order: 7;
     }
-  // }
-  // .bs-left-flip {
-  //   &:nth-child(odd) {
-  //     order: 1;
-  //   }
-  //   &:nth-child(odd) {
-  //     order: 0;
-  //   }
-  //
-  // }
 }

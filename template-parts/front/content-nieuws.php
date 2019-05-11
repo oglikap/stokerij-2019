@@ -10,18 +10,18 @@ if ( $exec_query->have_posts() ) { ?>
   <!-- Nieuws -->
     <div id="bs-news" class="uk-section">
       <!-- <div class="uk-container"> -->
-        <h2 class="uk-heading-line uk-text-center"><span>Nieuws</span></h2>
+        <h2 class="uk-heading-line uk-heading-medium uk-text-center"><span>Nieuws</span></h2>
 
-        <div class="uk-card bs-news-item uk-child-width-1-2@s uk-grid-collapse uk-text-center" uk-grid>
+        <div class="uk-card bs-news-item uk-grid-collapse uk-text-center" uk-grid>
 
           <?php
           while ( $exec_query->have_posts() ): $exec_query->the_post();
           $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'medium_large'); ?>
 
-              <div class="uk-card-media-left uk-height-max-large uk-background-cover bs-right-flip" data-src="<?php echo $featured_img_url; ?>" uk-img>
+              <div class="uk-width-2-5@s uk-card-media-left uk-height-max-large uk-background-cover bs-right-flip" data-src="<?php echo $featured_img_url; ?>" uk-img>
 
               </div>
-              <div class="bs-left-flip">
+              <div class="uk-width-3-5@s bs-left-flip">
                 <div class="uk-card-body">
                   <h2>
                     <a href="<?php the_permalink(); ?>">

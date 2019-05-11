@@ -1,21 +1,22 @@
-<h1 class="uk-heading-medium uk-position-top-center uk-text-center"><?php the_title(); ?></h1>
-
 <div class="uk-section">
+  <?php if( !is_page( 'jonge-stokerij' && !is_page('over') ) ) { ?><h1 style="width: 80%;line-height: 1" class="bs-color-red uk-heading-medium uk-text-center uk-margin-auto"><?php if( is_page('speellijst') ) { echo "Agenda"; } else { the_title(); } ?></h1><?php } ?>
   <div class="uk-container uk-container-small">
-    <article class="uk-article">
-      <!-- <span class="uk-text-center uk-text-lead"><//?php the_excerpt(); ?></span> -->
+    <div class="uk-padding-small uk-padding-remove-top">
 
-      <?php the_post_thumbnail( 'landscape' ); ?>
+      <?php if( !is_page('jonge-stokerij') && !is_page('over') ) { ?>
+      <div class="uk-align-left">
+      <?php the_post_thumbnail('portrait'); ?>
+      </div>
+      <?php } ?>
 
-      <?php get_template_part( 'template-parts/content', 'content' ); ?>
+      <?php if( have_posts() ): while( have_posts() ): the_post(); ?>
 
-    </article>
+        <div class="bs-content" id="bs-content">
+          <?php the_content(); ?>
+        </div>
+
+      <?php endwhile; endif; ?>
+
+    </div>
   </div>
 </div>
-
-<?php get_template_part( 'template-parts/content', 'gallery' ); ?>
-
-<!-- <div class="uk-section">
-  <//?php get_template_part( 'template-parts/content', 'prev-next' ); ?>
-
-</div> -->

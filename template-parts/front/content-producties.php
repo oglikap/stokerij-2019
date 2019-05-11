@@ -10,10 +10,10 @@ $exec_query = new WP_Query( array (
     <div class="uk-container uk-text-center">
       <?php //* The Loop
       if ( $exec_query->have_posts() ) { ?>
-      <h2 class="uk-heading-line"><span>Producties</span></h2>
-      <h3 style="color:#2e3842">2018/2019</h3>
+      <h2 class="uk-heading-line uk-heading-medium bs-color-red"><span>Producties</span></h2>
+      <h3>2018/2019</h3>
       <hr class="uk-divider-small" />
-      <div class="uk-child-width-1-2 uk-child-width-1-4@l uk-grid-small" uk-grid>
+      <div class="uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-child-width-1-5@l uk-grid-small uk-flex-center" uk-grid>
         <?php
           while ( $exec_query->have_posts() ): $exec_query->the_post();
 
@@ -40,7 +40,7 @@ $exec_query = new WP_Query( array (
       <h3 style="color:#2e3842;margin-top:1em;">Op tournee</h3>
       <hr class="uk-divider-small" />
 
-      <div class="uk-child-width-1-2 uk-child-width-1-4@l uk-grid-small uk-flex-center" uk-grid>
+      <div class="uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-child-width-1-5@l uk-grid-small uk-flex-center" uk-grid>
         <?php
         while ( $exec_query->have_posts() ): $exec_query->the_post();
 
@@ -67,7 +67,7 @@ $exec_query = new WP_Query( array (
        <h3 class="uk-text-center" style="color:#2e3842;margin-top:1em;">Verwacht! 2019/2020</h3>
        <hr class="uk-divider-small uk-text-center" />
 
-       <div class="uk-child-width-1-2 uk-child-width-1-3@m uk-grid-small uk-flex-center" uk-grid>
+       <div class="uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-child-width-1-5@l uk-grid-small uk-flex-center" uk-grid>
 
          <?php
           while ( $exec_query->have_posts() ): $exec_query->the_post();
